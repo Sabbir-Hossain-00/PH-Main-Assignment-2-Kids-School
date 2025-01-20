@@ -6,4 +6,273 @@
     font-weight: 400;
     font-style: normal;
   }
-  
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* shared style */
+
+.btn-primary{
+    text-align: center;
+    width: 195px;
+    height: 50px;
+    background-color: #FEA301;
+    color: #fff;
+    border-radius: 12px;
+    padding: 10px;
+    border: none;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+/* header style */
+/* nav style */
+
+nav{
+    max-width: 80.5%;
+    margin: 0 auto;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 11px;
+}
+.logo img{
+    width: 90%;
+}
+.logo span{
+    font-size: 2rem;
+    font-weight: bold;
+    color: #111;
+}
+.nav-content ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+.nav-content ul li{
+    list-style: none;
+}
+.nav-content ul a{
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+#first-li a{
+    color: #FEA301;
+    font-weight: bold;
+}
+#second-li a{
+    color: #01ACFD;
+}
+#third-li a{
+  color: #05D4DF;
+}
+#fourth-li a{
+  color: #5D58EF;
+}
+.menu{
+    display: none;
+}
+
+/* banner style start */
+#banner{
+    max-width: 80.5%;
+    margin: 0 auto;
+    padding: 25px 0;
+}
+
+.banner-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.banner-content{
+    max-width: 44.44%;
+}
+.banner-img{
+max-width: 40%;
+}
+.banner-img img{
+    width: 100%;
+}
+.banner-content h1{
+    font-size: 3.5rem;
+    line-height: 3.8rem;
+    margin-bottom: 24px;
+}
+.banner-content h1 span:nth-child(1){
+    color: #FEA301;
+}
+.banner-content h1 span:nth-last-child(1){
+    color: #01ACFD;
+}
+.banner-content p{
+    font-size: 1.25rem;
+    color: #111;
+    margin-bottom: 24px;
+}
+#banner-btn{
+    background-color: #111;
+}
+
+/* curriculam style start */
+
+#curriculum{
+background-image: url("../assets/bg.png");
+background-size: contain;
+background-position: top;
+background-repeat: no-repeat;
+}
+.curriculam-container{
+    max-width: 80.5%;
+    margin: 0 auto;
+    padding: 25px 0;
+}
+.curriculam-container h1{
+    font-size: 3rem;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 80px;
+}
+.curriculam-cards{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.curriculam-card{
+    width: 367px;
+    padding: 53px 41px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 33px;
+    text-align: center;
+    border-radius: 18px;
+    box-shadow: 0 0 28.3px rgb(0, 0, 0,0.05);
+}
+.curriculam-card h2{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #202020;
+}
+.curriculam-card p{
+    font-size: 0.92rem;
+    font-weight: 500;
+    color: #808080;
+    line-height: 28px;
+}
+.card-1{
+    background: linear-gradient(to bottom, #DEF5FF 0%, #FFF 40%);
+    border: 0.9px solid #DEF5FF;
+}
+.card-2{
+    background: linear-gradient(to bottom, #FFF4DC 0%, #FFF 40%);
+    border: 0.9px solid #FFF4DC;
+}
+.card-3{
+    background: linear-gradient(to bottom, #EEE1FF 0%, #FFF 40%);
+    border: 0.9px solid #F2E8FF;
+}
+.curriculam-span-1{
+    color:#64C8FF ;
+    font-weight: bold;
+}
+.curriculam-span-2{
+    color:#F0AA00 ;
+    font-weight: bold;
+}
+.curriculam-span-3{
+    color:#8700FF ;
+    font-weight: bold;
+}
+.arrows{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.arrows img{
+    margin-top: 80px;
+    padding: 16px 20px;
+    background-color: #F0AA00;
+    border-radius: 50%;
+}
+
+
+/* responsive for mobile device */
+@media screen and (max-width:576px) {
+    nav{
+        max-width: 100%;
+        border-bottom: 1px solid #FEA301;
+        padding: 20px;
+    }
+    .logo span ,
+    #nav-btn,
+    .nav-content {
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+    .banner-container{
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+    .banner-content{
+        text-align: center;
+        max-width: 100%;
+    }
+    .banner-img{
+    max-width: 100%;
+    }
+    .banner-content h1{
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+    .banner-content p{
+        font-size: 0.9rem;
+    }
+    .curriculam-cards{
+        justify-content: center;
+        gap: 30px;
+    }
+}
+
+
+/* responsive for tablet device */
+@media screen and (min-width:576px) and (max-width:1000px) {
+    .logo span ,
+    #nav-btn {
+        display: none;
+    }
+    .menu{
+        display: none;
+    }
+    .banner-container{
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+    .banner-content{
+        text-align: center;
+        max-width: 100%;
+    }
+    .banner-img{
+        max-width: 100%;
+    }
+    .curriculam-cards{
+        justify-content: center;
+        gap: 30px;
+    }
+}
+/* responsive for laptop */

@@ -44,10 +44,10 @@ nav{
     align-items: center;
     gap: 11px;
 }
-.logo img{
+/* .logo img{
     width: 90%;
-}
-.logo span{
+} */
+.nav-span{
     font-size: 2rem;
     font-weight: bold;
     color: #111;
@@ -314,6 +314,57 @@ background-repeat: no-repeat;
 .story-btn{
     text-align: center;
 }
+
+
+/* footer style start here */
+
+footer{
+    background-color: #01ACFD;
+    color: #fff;
+}
+.footer-container{
+    max-width: 80.5%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 125px 0;
+}
+.footer-logo{
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap:35px ;
+}
+.footer-span{
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+}
+.footer-logo p{
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+.footer-content h3{
+  font-size: 1.55rem;
+  font-weight: bold;
+  margin-bottom:32px ;
+}
+.footer-content p{
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 32px;
+}
+.footer-icons h3{
+    font-size: 1.55rem;
+    font-weight: bold;
+    margin-bottom:32px ;
+}
+
+
+
+
 /* responsive for mobile device */
 @media screen and (max-width:576px) {
     nav{
@@ -321,7 +372,7 @@ background-repeat: no-repeat;
         border-bottom: 1px solid #FEA301;
         padding: 20px;
     }
-    .logo span ,
+    .nav-span ,
     #nav-btn,
     .nav-content {
         display: none;
@@ -390,12 +441,16 @@ background-repeat: no-repeat;
         margin-bottom: 30px;
        
     }
+    .footer-container{
+        flex-direction: column;
+        gap: 32px;
+    }
 }
 
 
 /* responsive for tablet device */
 @media screen and (min-width:576px) and (max-width:1000px) {
-    .logo span ,
+    .nav-span ,
     #nav-btn {
         display: none;
     }
@@ -421,5 +476,17 @@ background-repeat: no-repeat;
         justify-content: center;
         flex-direction: column-reverse;
     }
+    .footer-container{
+        flex-direction: column;
+        gap: 32px;
+        align-items: center;
+        text-align: center;
+    }
+    .footer-logo{
+        align-items: center;
+        text-align: start;
+    }
+    .footer-logo p{
+        text-align: center;
+    }
 }
-/* responsive for laptop */

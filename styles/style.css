@@ -205,8 +205,13 @@ background-repeat: no-repeat;
 .arrows img{
     margin-top: 80px;
     padding: 16px 20px;
-    background-color: #F0AA00;
+    background-color: #FEA301;
     border-radius: 50%;
+    cursor: pointer;
+    transition: ease-in 0.3s;
+}
+.arrows img:hover{
+    background-color: #64C8FF;
 }
 
 
@@ -290,6 +295,7 @@ background-repeat: no-repeat;
     height: 38px;
     text-align: center;
     margin-bottom: 10px;
+    color: #fff;
 }
 
 .story-card-right p{
@@ -307,12 +313,20 @@ background-repeat: no-repeat;
 }
 .right-3{
     background-image: url("../assets/story-4.png");
+    padding: 163px 38px 28px 38px;
 }
 .right-4{
     background-image: url("../assets/story-5.png");
+    padding: 163px 38px 28px 38px;
 }
 .story-btn{
     text-align: center;
+}
+.right-2 button{
+    background-color: #5D58EF;
+}
+.right-3 button{
+    background-color: #5D58EF;
 }
 
 
@@ -367,6 +381,13 @@ footer{
 
 /* responsive for mobile device */
 @media screen and (max-width:576px) {
+    .btn-primary{
+        width: 134px;
+        height: 40px;
+        border-radius: 12px;
+        font-size: 16px;
+        padding: 10px;
+    }
     nav{
         max-width: 100%;
         border-bottom: 1px solid #FEA301;
@@ -399,12 +420,26 @@ footer{
         font-size: 0.9rem;
     }
     .curriculam-card{
-        padding: 30px 30px;
+        width: 100%;
+        padding: 30px 35px;
         gap: 15px;
+    }
+    .curriculam-container h1{
+        font-size: 1.5rem;
     }
     .curriculam-cards{
         justify-content: center;
         gap: 30px;
+    }
+    .curriculam-card h2{
+        font-size: 1.05rem;
+    }
+    .curriculam-card p{
+        font-size:10px;
+        line-height: 19px;
+    }
+    .curriculam-card span{
+        font-size: 10px;
     }
     .left-card{
         display: none;
@@ -413,10 +448,19 @@ footer{
         width: 100%;
         gap: 10px;
     }
+    .arrows{
+        display: none;
+    }
     .story-card-right{
       width: 173px;
       height: 180px;
       padding: 93px 17px 17px 22px;
+    }
+    .right-3{
+        padding: 96px 17px 17px 22px;
+    }
+    .right-4{
+        padding: 96px 17px 17px 22px;
     }
     .story-card-right p{
         font-size: 0.6rem;

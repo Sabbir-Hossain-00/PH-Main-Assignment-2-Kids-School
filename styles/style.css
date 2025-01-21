@@ -84,6 +84,7 @@ nav{
 }
 /* marque style  */
 .announcment{
+    width: 100%;
     text-align: center;
     padding: 30px 0 0 0;
 }
@@ -93,12 +94,9 @@ marquee {
     font-weight: bold;
     color: #fff;
     background: linear-gradient(90deg, #6a11cb, #2575fc);
-    /* border: 2px solid #2575fc; */
     padding: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
     cursor: pointer;
-    /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); */
 }
 /* banner style start */
 #banner{
@@ -163,12 +161,12 @@ background-repeat: no-repeat;
 }
 .curriculam-cards{
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 30px;
+    justify-content: center;
+    gap:2.41%;
 }
 .curriculam-card{
-    width: 367px;
+    width: 31.63%;
+    height: 476px;
     padding: 53px 41px;
     display: flex;
     flex-direction: column;
@@ -241,7 +239,7 @@ background-repeat: no-repeat;
 .stories-container{
     max-width: 80.5%;
     margin: 0 auto;
-    padding: 25px 0 0 0;
+    padding: 25px 0;
 }
 .stories-container h1{
     font-size: 2.8rem;
@@ -251,58 +249,65 @@ background-repeat: no-repeat;
 }
 .story-cards{
     margin-bottom: 80px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 19px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1.56%;
 }
-.left-card{
-   background-color: #fff;
-    width: 540px;
-    height: 620px;
+.first-story-card{
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+}
+.story-card{
+    background-color: #fff;
     border-radius: 16px;
-    background-image: url("../assets/story-1.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    padding: 315px 38px 34px 38px;
 }
-.left-card h3{
-    font-size: 1.5rem;
-    line-height: 2.1rem;
-    margin-bottom: 41px;
+.story-card img{
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    width: 100%;
 }
+.story-card p{
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #666666;
+    margin-left: 7% ;
+    width: 80%;
+    margin-bottom: 5%;
+}
+.story-card h3{
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: #000000;
+    margin-bottom:6% ;
+    margin-left: 7%;
+    width: 80%;
+}
+.first-story-card h3{
+    font-size:1.5rem ;
+    font-weight: bold;
+    color: #000000;
+}
+.right-2>button{
+    background-color:#5D58F0 ;
+}
+.right-3>button{
+    background-color:#5D58F0 ;
+}
+
+
 .btn-secondary{
     background-color: #3CD8E8;
     color: #fff;
     border-radius: 47px;
-    width: 175px;
-    height: 47px;
+    width: 174px;
+    padding: 15px;
     text-align: center;
     border: none;
-    margin-bottom: 33px;
-}
-.left-card p{
-    font-size: 1rem;
-    line-height: 1.8rem;
-    color: #666666;
-    font-weight: 500;
-}
-
-.right-cards{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 19px;
-}
-.story-card-right{
-    width: 290px;
-    height: 301px;
-    background-color: #fff;
-    border-radius: 16px;
-    background-repeat: no-repeat;
-    background-size: contain;
-    padding: 157px 38px 28px 38px;
-
+    margin-left: 7%;
+    position: relative;
+    top: -26px;
 }
 .btn-tarnary{
     background-color: #95B226;
@@ -311,39 +316,13 @@ background-repeat: no-repeat;
     width: 174px;
     height: 38px;
     text-align: center;
-    margin-bottom: 10px;
     color: #fff;
-}
-
-.story-card-right p{
-    font-size: 0.9rem;
-    line-height: 1.8rem;
-    color: #000000;
-    font-weight: bold;
-}
-
-.right-1{
-    background-image: url("../assets/story-2.png");
-}
-.right-2{
-    background-image: url("../assets/story-3.png");
-}
-.right-3{
-    background-image: url("../assets/story-4.png");
-    padding: 163px 38px 28px 38px;
-}
-.right-4{
-    background-image: url("../assets/story-5.png");
-    padding: 163px 38px 28px 38px;
+    position: relative;
+    top: -25px;
+    margin-left: 7%;
 }
 .story-btn{
     text-align: center;
-}
-.right-2 button{
-    background-color: #5D58EF;
-}
-.right-3 button{
-    background-color: #5D58EF;
 }
 
 
@@ -439,17 +418,20 @@ footer{
     .banner-content p{
         font-size: 0.9rem;
     }
+    .curriculam-cards{
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
     .curriculam-card{
         width: 100%;
-        padding: 30px 35px;
-        gap: 15px;
+        height: 320px;
+        gap: 20px;
     }
     .curriculam-container h1{
         font-size: 1.5rem;
-    }
-    .curriculam-cards{
-        justify-content: center;
-        gap: 30px;
+        margin-bottom: 20px;
     }
     .curriculam-card h2{
         font-size: 1.05rem;
@@ -471,21 +453,6 @@ footer{
     .arrows{
         display: none;
     }
-    .story-card-right{
-      width: 173px;
-      height: 180px;
-      padding: 93px 17px 17px 22px;
-    }
-    .right-3{
-        padding: 96px 17px 17px 22px;
-    }
-    .right-4{
-        padding: 96px 17px 17px 22px;
-    }
-    .story-card-right p{
-        font-size: 0.6rem;
-        line-height: 1rem;
-    }
     .btn-tarnary{
         width: 100px;
         height: 22px;
@@ -497,17 +464,57 @@ footer{
         justify-content: center;
         align-items: center;
     }
+    .story-cards{
+        margin-bottom: 80px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 3%;
+        margin-bottom: 40px;
+    }
+    .first-story-card{
+        display: none;
+    }
+    .story-card{
+        border-radius: 8px;
+    }
+    .story-card img{
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+    .story-card h3{
+        font-size: 0.5rem;
+        line-height: 1.3rem;
+        margin-bottom:8% ;
+        margin-left: 12%;
+        font-weight: bold;
+    }
+    .btn-tarnary{
+        width: 103px;
+        height: 22px;
+        position: relative;
+        top: -16px;
+        margin-left: 12%;
+        font-size: 0.5rem;
+    }
     .stories-container h1{
         font-size: 1.5rem;
         margin-bottom: 30px;
     }
-    .story-cards{
-        margin-bottom: 30px;
-       
-    }
     .footer-container{
         flex-direction: column;
         gap: 32px;
+        padding: 60px 0;
+    }
+    .footer-content h3{
+        margin-bottom:20px ;
+        font-size: 1.26rem;
+      }
+    .footer-logo p{
+        font-size: 1rem;
+    }
+    .footer-content p{
+          margin-bottom: 20px;
+          font-size: 1rem;
     }
 }
 
@@ -534,11 +541,21 @@ footer{
     }
     .curriculam-cards{
         justify-content: center;
+        flex-direction: column;
+        align-items: center;
         gap: 30px;
     }
+    .curriculam-card{
+        width: 65%;
+    }
     .story-cards{
-        justify-content: center;
-        flex-direction: column-reverse;
+        margin-bottom: 80px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 3%;
+    }
+    .first-story-card{
+        display: none;
     }
     .footer-container{
         flex-direction: column;

@@ -251,7 +251,7 @@ background-repeat: no-repeat;
     margin-bottom: 80px;
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    gap: 1.56%;
+    gap: 19px;
 }
 .first-story-card{
     grid-column: 1 / span 2;
